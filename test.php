@@ -3,13 +3,11 @@
 extract($_POST);
 $myfile = fopen("./testfile.txt", "w") or die("Unable to open file!");
 if (isset($_POST['submit'])) {
-    $txt = "John Doe\n";
-    fwrite($myfile, $txt);
-    $txt = "Jane Doe\n";
-    fwrite($myfile, $txt);
+    fwrite($myfile, "succ");
     fclose($myfile);
 }
 else{
+    fwrite($myfile, "failure");
     fclose($myfile);
 }
 
