@@ -10,10 +10,12 @@
 	<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
 	<h4 class="text-center">Create a New Account</h4>
 	<p class="text-success text-center"></p>
-	<form action="http://192.168.1.103/webserver/user/login.php" method="post">
+	<form action="http://192.168.1.104/webserver/user/login.php" method="post">
 
-                <label for="email">First Name</label>
-                <input type="text" class="form-control" placeholder="Enter First Name" name="first_name" value="">
+                <label for="username">username</label>
+                <input type="text" placeholder="username" name="username" value="">
+				<label for="password">password</label>
+                <input type="text" placeholder="password" name="password" value="">
 		<button type="submit" class="btn btn-danger" name="submit">Register Now</button>
 	</form>
 </body>
